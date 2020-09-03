@@ -1,0 +1,23 @@
+using System;
+
+class Mainclass
+{
+  public static void Main (string [] args)
+  {
+    string userInput;
+    double F_Temp;
+    double K_Temp;
+
+    Console.Write("Enter the temperature in Fahrenheit: ");
+    userInput = Console.ReadLine();
+    F_Temp = Convert.ToDouble(userInput);
+
+    K_Temp = (F_Temp - 32);
+    K_Temp = (K_Temp * 5)/9;
+    K_Temp = K_Temp + 273.15;
+
+    Console.WriteLine ("The temperature in Kelvin is " + K_Temp);
+
+  }
+
+}
