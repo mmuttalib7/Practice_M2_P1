@@ -1,0 +1,19 @@
+#include<iostream>
+
+using namespace std;
+ 
+int main (){
+ double F_temp = 0;
+ double K_temp = 0;
+ 
+ cout << "Enter the temperature in Fahrenheit: ";
+ cin >> F_temp;
+ 
+ K_temp = (F_temp - 32);
+ K_temp = (K_temp * 5)/9;
+ K_temp = K_temp + 273.15;
+ 
+ cout << K_temp << " degrees is the temperature in Kelvin."<< endl;
+ 
+ return 0;
+}
